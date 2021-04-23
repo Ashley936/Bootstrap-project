@@ -1,12 +1,14 @@
 
 /* 4. ADD JS TO THE NAVBAR TO CHANGE BG COLOR TO WHITE AND COLOR TO BLACK */
-
+html{
+    background:rgb(233, 229, 229);
+}
 .nav-link, .navbar-brand{
     color:white;
 }
 .nav-link:hover{
   
-  transform: scale(1.2);
+  transform: scale(1.2) translateX(40px);
   color:whitesmoke;
 }
 .navbar-brand{
@@ -182,6 +184,10 @@ button{
 button:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+button:focus{
+    transform: scale(1.1);
+    outline: none;
 }
 footer{
     border-top: 2px solid black;
