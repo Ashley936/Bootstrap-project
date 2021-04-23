@@ -1,0 +1,191 @@
+
+/* 4. ADD JS TO THE NAVBAR TO CHANGE BG COLOR TO WHITE AND COLOR TO BLACK */
+
+.nav-link, .navbar-brand{
+    color:white;
+}
+.nav-link:hover{
+  
+  transform: scale(1.2);
+  color:whitesmoke;
+}
+.navbar-brand{
+    font-weight: 700;
+    /* word-spacing: 1.3em; CHANGE FONT FAMILY HERE */
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    margin-top: 2px;
+    
+}
+
+
+/**************HEADER********************/
+
+ .header{
+    height: auto;
+   
+    min-height: 60vh;
+    align-items: center;}
+
+.background{
+    
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #2a2929 74%);
+}
+.text-onTop{
+    position: absolute;
+    top: 10vw;
+    right:0;
+    width:50%;
+    text-align: center;
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: 700;
+    color:white;
+    z-index: 2;
+}
+.row img{                    
+    max-height: 80vh;
+    width: 100%;
+}
+/* TRY USING FLOAT AND DISPLAY:FLOW-ROOT FOR IMAGE */
+@media (min-width:768) {
+    .row img{
+        height: fit-content;}
+}
+.fab{
+    color: whitesmoke;
+}
+.h1{
+    font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.h2{
+    font-size: 2.5em;
+    font-family: 'Exo 2', sans-serif;
+    color:hsl(0, 0%, 40%);
+}
+
+/******************** MAIN BODY START BELOW **********************/
+main{
+    background-color: rgb(233, 229, 229);
+}
+@media (min-width:576px) {
+    .big-card{
+        box-shadow:  0 0 40px rgba(15, 15, 15, 0.8);
+        background-color: white;
+        border-radius: 10px;
+        width:85%;
+        position: relative;
+        bottom: 40px;
+    }
+    .container{
+        width:75%
+    }
+    .middle{
+        transform: scale(1.1);
+        z-index: 2;
+    }
+}
+.image{
+    width:50%;
+    min-width:280px;
+    height: 30vmax;
+}
+.text{
+    color:whitesmoke;
+    font-family: 'Exo 2';
+    width: 75vw;   
+    min-height:70px;
+
+}
+@media (min-width:576px) {
+    .text{
+        font-size: 1.5em;
+    }
+}
+@media (min-width:786px) {
+    .text{
+        font-size: 1.75em;
+    }
+}
+.features{
+    background-color: black;
+}
+
+/* PRICE CARDS */
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-container>*{
+    flex-basis: calc(calc(35em - 100%) * 999);
+	flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+    box-shadow: 0 0 30px rgba(2, 5, 85,0.8);
+    margin-bottom: 40px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.cardHeader{
+    font-size: 4em;
+    font-family: serif;
+    color: rgb(3,3,24);
+    font-size: 700;
+}
+.blue{
+    color: rgb(3, 3, 24);
+ }
+.middle{
+    
+    background: linear-gradient(to bottom right, rgb(2, 5, 85) 11%, #030318 73%);
+   
+    border-radius: 15px;
+    
+}
+/* rgb(2,2,17) */
+.middle .cardHeader, .middle h1{
+    color: white;
+}
+button{
+    width:100px;
+    height: 40px;
+    border:2px solid rgb(3, 3, 44);
+    margin:15px 0 30px 0;
+    background-color: transparent;
+    color:rgb(3, 3, 24);
+    font-size: 1.4em;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.middle button{
+    border-color: white;
+    background-color: rgb(3, 3, 24);
+    color:white;
+    position: relative;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer{
+    border-top: 2px solid black;
+}
+ul li a{
+    color:rgb(56, 55, 55);
+}
